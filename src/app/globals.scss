@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Fauna+One:400|Playfair+Display:400");
+
+* {
+  // cursor: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root{
+  --headingFont: "Playfair Display", serif;
+  --bodyFont: "Fauna One", serif;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-weight: 400;
+  background-color: #111;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container{
+  max-width: 1270px;
+  margin: 0 auto;
+  width: 95%;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,117 @@
+.footer{
+  display: flex;
+  align-items: center;
+  height: 70px;
+  margin-bottom: 30px;
+  color: #878787;
+}
+
+.footer .mail-link{
+  margin-left: auto;
+  display: inline-block;
+  color: #878787;
+  font-weight: bold;
+
+}
+.footer .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.footer-socials{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 30px ;
+}
+.footer-socials a{
+  font-weight: bold;
+  color: #878787;
+  transition: all 1s ease-in-out;
+}
+.footer-socials a:hover{
+  color: #aaa;
+}
+
+.footer-socials .mail-link{
+  position: relative;
+  padding: 3px 0;
+}
+
+.footer-socials .mail-link:hover.mail-link::after{
+  width: 100%;
+}
+
+.footer-socials .mail-link::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #aaa;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s ease-in;
+}
+
+.footer-socials .linkedIn-link{
+  position: relative;
+  padding: 3px 0;
+}
+
+.footer-socials .linkedIn-link:hover.linkedIn-link::after{
+  width: 100%;
+}
+
+.footer-socials .linkedIn-link::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #aaa;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s ease-in;
+}
+.footer-socials .github-link{
+  position: relative;
+  padding: 3px 0;
+}
+
+.footer-socials .github-link:hover.github-link::after{
+  width: 100%;
+}
+
+.footer-socials .github-link::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #aaa;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s ease-in;
+}
+.footer-socials .twitter-link{
+  position: relative;
+  padding: 3px 0;
+}
+
+.footer-socials .twitter-link:hover.twitter-link::after{
+  width: 100%;
+}
+
+.footer-socials .twitter-link::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #aaa;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s ease-in;
+}

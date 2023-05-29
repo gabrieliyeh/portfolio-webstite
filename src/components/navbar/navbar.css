@@ -1,0 +1,103 @@
+nav {
+  display: flex;
+  height: 70px;
+  background: transparent;
+  width: 100%;
+  z-index: 20;
+  background-color: #111;
+  transition: all 0.5s ease;
+  /* background-color: red; */
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+}
+.nav-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 90%;
+  /* background-color: yellow; */
+}
+
+.nav-center img{
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  transform: rotate(90deg);
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-left: auto;
+
+}
+
+nav ul li a {
+  color: #9C6ACD; 
+}
+/* 
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: fixed;
+  left: 10%;
+  z-index: 2001;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #9C6ACD;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+} */
+
+.nav-center .img-container{
+  width: 70px;
+  height: 70px;
+  /* background-color: red; */
+}
+
+
+
+@media screen and (max-width:1024px ){
+  nav ul li{
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  .nav-center{
+    width: 95%;
+  }
+  
+}

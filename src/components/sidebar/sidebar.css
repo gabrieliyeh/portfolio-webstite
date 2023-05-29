@@ -1,0 +1,38 @@
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+  transform: translateX(-100%);
+  opacity: 0.2;
+  display: none;
+}
+
+.sidebar{
+  /* background: inherit; */
+  background-color: #222;
+  background-color: #111;
+  width: 300px;
+  height: 100%;
+  transform: translateX(-200px); 
+  padding: 20px;
+  /* box-shadow: 1px 2px 3px red; */
+}
+.showSidebar{
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 1s ease ;
+}
+
+@media screen and (max-width: 768px) {
+  .backdrop{
+
+  }
+}
+@media screen and (min-width: 768px) {
+  .backdrop{
+    display: none;
+  }
+}

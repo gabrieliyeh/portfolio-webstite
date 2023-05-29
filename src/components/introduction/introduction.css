@@ -1,0 +1,87 @@
+.salute .container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: calc(100vh - 70px);
+  cursor: default;
+  user-select: none;
+}
+
+.margin-top{
+  margin-top: 70px;
+}
+
+.salute-text-container {
+  flex: 3;
+  will-change: transform;
+}
+
+.salute-img-container {
+  flex: 1;
+  will-change: transform;
+  position: relative;
+  top: 20px;
+}
+
+.salute-text {
+  color: #878787;
+  font-size: 55vw;
+}
+
+.salute-img {
+  width: 100%;
+}
+
+.name-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;  
+  cursor: default;
+  user-select: none;
+
+
+}
+.name-container .container {
+  background: url("/static/bg1.png");
+}
+
+.name {
+  font-size: 19vw;
+  color:#878787;
+  will-change: transform;
+}
+
+.job-title-container {
+  height: 100vh;
+
+}
+.job-title-container .container {
+  height: 100%;
+
+  user-select: none;
+}
+
+.dark {
+  background: url("/static/bg1.png");
+}
+
+.purple {
+  background: url("/static/bg1.png");
+
+}
+
+.job-title {
+  font-size: 10vw;
+  color: #878787;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}/*# sourceMappingURL=introduction.css.map */
+
+@media screen and (max-width:1024px ){
+
+  .job-title-container {
+    height: 80vh;
+  
+  }
+}
