@@ -1,0 +1,138 @@
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 1s ease ;
+  -o-transition: all 1s ease ;
+  transition: all 1s ease ;
+  cursor: pointer;
+}
+
+.sidebar{
+  background: #aaa;
+  background-color: black;
+  width: 70vw;
+  height: 100%;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: default;
+}
+
+.sidebar ul{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  color:#9C6ACD;
+}
+
+.sidebar ul li{
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sidebar ul li a{
+  color:#9C6ACD;
+}
+
+.showSidebar ul li a:hover{
+  color:#b87df3;
+}
+
+.showSidebar{
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 0.7s ease-in ;
+  -o-transition: all 0.7s ease-in ;
+  transition: all 0.7s ease-in ;
+}
+
+
+.sidebar .home-link{
+  position: relative;
+  padding: 3px 0;
+}
+
+.sidebar .home-link:hover.home-link::after{
+  width: 100%;
+}
+
+.sidebar .home-link::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #aaa;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.sidebar .about-link{
+  position: relative;
+  padding: 3px 0;
+}
+
+.sidebar .about-link:hover.about-link::after{
+  width: 100%;
+}
+
+.sidebar .about-link::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #aaa;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.sidebar .projects-link{
+  position: relative;
+  padding: 3px 0;
+}
+
+.sidebar .projects-link:hover.projects-link::after{
+  width: 100%;
+}
+
+.sidebar .projects-link::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #aaa;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop{
+    display: none;
+  }
+}

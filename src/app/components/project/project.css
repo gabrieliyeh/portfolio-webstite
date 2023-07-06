@@ -1,0 +1,145 @@
+.projects .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 80px;
+  min-height: 100vh; 
+  overflow-x: hidden;
+}
+.projects .phone {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 300px;
+  height: 600px;
+  position: relative;
+
+}
+.projects .project:last-child{
+  margin-bottom: 10vh;
+}
+.projects .phone .phone-screen {
+  width: 264px;
+  height: 564px;
+  position: absolute;
+  top: 17px;
+  left: 18px;
+  border-radius: 28px;
+  overflow: auto;
+}
+.projects .phone .phone-screen::-webkit-scrollbar {
+  display: none;
+}
+.projects .phone .phoneApp {
+  width: 100%;
+}
+.projects .laptop {
+  width: 600px;
+  height: 379px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+}
+.projects .laptop .laptop-screen::-webkit-scrollbar {
+  display: none;
+}
+.projects .laptop .laptopApp {
+  width: 100%;
+}
+.projects .laptop .laptop-screen {
+  width: 451px;
+  height: 283px;
+  position: absolute;
+  top: 18px;
+  left: 68px;
+  overflow: auto;
+}
+
+.projects .project:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.phone-sm{
+  display: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 300px;
+  height: 600px;
+  position: relative;
+  overflow: visible;
+}
+
+.projects .phone-sm .phone-screen {
+  width: 264px;
+  height: 564px;
+  position: absolute;
+  top: 17px;
+  left: 18px;
+  border-radius: 28px;
+  overflow: auto;
+}
+.projects .phone-sm .phone-screen::-webkit-scrollbar {
+  display: none;
+}
+.projects .phone-sm .phoneApp {
+  width: 100%;
+}
+
+@media screen and (max-width:1024px ){
+  .projects .project{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;  
+    margin-bottom: 50px;
+
+  }
+  .projects .project:nth-child(2n){
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;  
+    margin-bottom: 50px;
+  }
+  
+  .projects .phone, 
+  .projects .laptop {
+    -webkit-transform: none !important;
+        -ms-transform: none !important;
+            transform: none !important;
+  }
+
+  .projects .laptop{
+    display: none;
+    /* width: 90vw !important;
+    height: 50%;
+    object-fit: scale-down; */
+  }
+  .projects .laptop .laptop-screen{
+    /* width: 85% !important; */
+  }
+
+  .projects .phone-sm{
+    display: block;
+    /* display: none; */
+  }
+
+  .projects .project-title{
+    /* transform: none !important; */
+  }
+ 
+}

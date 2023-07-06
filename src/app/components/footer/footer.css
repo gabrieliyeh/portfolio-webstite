@@ -1,0 +1,170 @@
+.footer{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  margin-bottom: 30px;
+  color: #878787;
+  overflow: visible;
+  
+}
+
+.footer .mail-link{
+  margin-left: auto;
+  display: inline-block;
+  color: #878787;
+  font-weight: bold;
+
+}
+.footer .container{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer p{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.footer-socials{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px ;
+}
+.footer-socials a{
+  font-weight: bold;
+  color: #878787;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.footer-socials a:hover{
+  color: #aaa;
+}
+
+.footer-socials .mail-link{
+  position: relative;
+  padding: 3px 0;
+}
+
+.footer-socials .mail-link:hover.mail-link::after{
+  width: 100%;
+}
+
+.footer-socials .mail-link::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #aaa;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.footer-socials .linkedIn-link{
+  position: relative;
+  padding: 3px 0;
+}
+
+.footer-socials .linkedIn-link:hover.linkedIn-link::after{
+  width: 100%;
+}
+
+.footer-socials .linkedIn-link::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #aaa;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+.footer-socials .github-link{
+  position: relative;
+  padding: 3px 0;
+}
+
+.footer-socials .github-link:hover.github-link::after{
+  width: 100%;
+}
+
+.footer-socials .github-link::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #aaa;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+.footer-socials .twitter-link{
+  position: relative;
+  padding: 3px 0;
+}
+
+.footer-socials .twitter-link:hover.twitter-link::after{
+  width: 100%;
+}
+
+.footer-socials .twitter-link::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #aaa;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+ 
+  .footer .container{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 40px;
+    width: 100%;
+  }
+
+
+  .footer .footer-socials{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}

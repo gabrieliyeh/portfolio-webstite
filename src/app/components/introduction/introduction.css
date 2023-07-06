@@ -1,0 +1,111 @@
+.salute .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  height: calc(100vh - 70px);
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.margin-top{
+  margin-top: 70px;
+}
+
+.salute-text-container {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  will-change: transform;
+}
+
+.salute-img-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  will-change: transform;
+  position: relative;
+  top: 20px;
+}
+
+.salute-text {
+  color: #878787;
+  font-size: 55vw;
+}
+
+.salute-img {
+  width: 100%;
+}
+
+.name-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;  
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+
+}
+.name-container .container {
+  background: url("/static/bg1.png");
+}
+
+.name {
+  font-size: 19vw;
+  color:#878787;
+  will-change: transform;
+}
+
+.job-title-container {
+  height: 100vh;
+
+}
+.job-title-container .container {
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.dark {
+  background: url("/static/bg1.png");
+}
+
+.purple {
+  background: url("/static/bg1.png");
+
+}
+
+.job-title {
+  font-size: 10vw;
+  color: #878787;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width:1024px ){
+
+  .job-title-container {
+    height: 80vh;
+  }
+
+}

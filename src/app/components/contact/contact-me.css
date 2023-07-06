@@ -1,0 +1,140 @@
+
+.contact-me-container .container{
+  height: 100vh; 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+
+
+}
+.contact-me-container a{
+  color:#878787;
+} 
+.contact-me-container .github-title {
+  font-size: 95px;
+  line-height: 100%;
+  text-align: center;
+
+}
+
+.contact-me-container .github-chart {
+  width: 820px;
+  text-align: center;
+  margin: 50px auto 0;
+  
+}
+.contact-me-container .dates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  font-size: 12px;
+}
+.contact-me-container .box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 5px;
+}
+.contact-me-container .box {
+  width: 15px;
+  height: 15px;
+  background-color: #171c25;
+  border-radius: 2px;
+  -webkit-transition: 1s all ease;
+  -o-transition: 1s all ease;
+  transition: 1s all ease;
+}
+
+.contact-me-container .box.active:nth-child(4n){
+  background-color: #4E8E5B;
+}
+
+.github-chart:hover .box.active:nth-child(2n+1){
+  background-color: #005941;
+}
+.github-chart:hover .box.active:nth-child(2n){
+  background-color: #4E8E5B;
+}
+
+.github-sm{
+  display: none;
+}
+
+@media screen and (max-width:1024px ){
+  .github-chart{
+    display: none;
+  }
+  .github-sm{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 30px;
+    text-align: center;
+  }
+  .contact-me-container .github-title {
+    text-align: center;
+    font-size: 10vw
+  }
+  .contact-me-container .container{
+   
+    display: -webkit-box;
+   
+    display: -ms-flexbox;
+   
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-bottom: 0;
+
+  }
+ 
+  .github-sm .sm-link{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .contact-me-container .container{
+    height: 70vh;
+  }
+}

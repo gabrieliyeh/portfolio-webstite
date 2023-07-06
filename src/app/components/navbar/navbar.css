@@ -1,0 +1,231 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  background: transparent;
+  width: 100%;
+  z-index: 20;
+  background-color: #111;
+  -webkit-transition: position 0.5s ease-in-out;
+  -o-transition: position 0.5s ease-in-out;
+  transition: position 0.5s ease-in-out;
+ 
+}
+.bg-inherit{
+    background-color: inherit;
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-transition: position 0.5s ease-in-out;
+    -o-transition: position 0.5s ease-in-out;
+    transition: position 0.5s ease-in-out;
+}
+
+.nav-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 90%;
+
+}
+
+.nav-active{
+  font-weight: bold;
+  color:#b87df3;
+
+}
+
+.nav-center img{
+  width: 35px;
+  height: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+  margin-left: auto;
+}
+
+nav ul li a {
+  color: #9C6ACD; 
+  padding: 2px 0;
+}
+
+.nav-center .home-link{
+  position: relative;
+  padding: 3px 0;
+}
+
+.nav-center .home-link:hover.home-link::after{
+  width: 100%;
+}
+
+.nav-center .home-link::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #aaa;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.nav-center .about-link{
+  position: relative;
+  padding: 3px 0;
+}
+
+.nav-center .about-link:hover.about-link::after{
+  width: 100%;
+}
+
+.nav-center .about-link::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #aaa;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.nav-center .projects-link{
+  position: relative;
+  padding: 3px 0;
+}
+
+.nav-center .projects-link:hover.projects-link::after{
+  width: 100%;
+}
+
+.nav-center .projects-link::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #aaa;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  -o-transition: transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+.hamRotate.active {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.hamRotate180.active {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  -webkit-transition: stroke-dasharray 0.8s, stroke-dashoffset 0.8s;
+  -o-transition: stroke-dasharray 0.8s, stroke-dashoffset 0.8s;
+  transition: stroke-dasharray 0.8s, stroke-dashoffset 0.8s;
+  stroke: #9C6ACD;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
+
+.logo-container{
+  width: 60px;
+  height: 60px;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+  .nav-center{
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ham{
+    display: none;
+  }
+
+}
+@media screen and (max-width: 768px){
+  nav ul li{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .nav-center{
+    max-width: 1350px;
+    width: 95%;
+  }
+}

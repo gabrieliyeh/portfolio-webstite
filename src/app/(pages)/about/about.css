@@ -1,0 +1,114 @@
+.about-page .name-wrapper{
+  height: calc(100vh - 70px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  cursor: default;
+}
+
+.about-page .download-link{
+  color: #878787;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2px;
+  font-size: 2vw;
+}
+.about-page .download-link:hover{
+  color: #aaa;
+}
+
+.about-page .about-text{
+  font-size: 7vw;
+  text-align: center;
+  color: #878787;
+}
+
+.about-page .btn{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  outline: none;
+  border: transparent;
+}
+
+.about-page .about-desc{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 80px;
+  margin-bottom: 20px;
+
+}
+
+.about-page .left{
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.about-page .right p{
+line-height: 25px;
+font-size: 1.2rem;
+text-align: justify;
+margin-bottom: 20px;
+}
+
+.about-page .left p{
+margin-bottom: 30px;
+}
+
+
+.about-page .left .title{
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #555;
+  color: #878787;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+.about-page .right{
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+
+@media screen and (max-width: 767px) {
+  .about-page .about-desc{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about-page .download-link{
+    font-size: 1.5rem;
+  }
+  .about-page .left .title{
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
+  
+}
+
+

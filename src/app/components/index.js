@@ -1,0 +1,6 @@
+export {default as Footer} from './footer/Footer' 
+export {default as Navbar} from './navbar/Navbar' 
+export {default as Projects} from './projects/Projects' 
+export {default as ContactMe} from './contact/ContactMe'
+export {default as Introduction} from './introduction/Introduction'
+export {default as Sidebar} from './sidebar/Sidebar'
