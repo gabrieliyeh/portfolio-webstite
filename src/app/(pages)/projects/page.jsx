@@ -1,6 +1,6 @@
 "use client";
 import './projects.css'
-import {Navbar, Footer, Projects } from "../../components";
+import {Footer, Projects } from "../../components";
 import projectData from '../../data/projectPageData.json'
 import useScrollPosition from '../../hooks/useScrollPosition'
 import { useEffect, useState,} from "react"
@@ -39,10 +39,9 @@ const ProjectPage = ()=> {
 
   return (
     <div className='projects-page'>
-      <Navbar/>
-      <div className={`${scrollPosition > 0 && 'margin-top'} `}>
+      <section className={`${scrollPosition > 0 && 'margin-top'} `}>
       <Projects isWork={true} projectData={projectData}  title= 'Projects' />
-      </div>
+      </section>
       <Footer/>
     </div>
   )

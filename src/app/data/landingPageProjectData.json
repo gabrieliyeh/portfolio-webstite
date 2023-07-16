@@ -1,26 +1,27 @@
 [
   {
-  "title": "DEA",
-  "description": "A user-friendly website for a data analytics company that showcases their services and makes it easy for potential clients to get in touch. The website includes an overview of the company's services, detailed information on each service, an About Us page, and a Contact Us page. It was designed as a comprehensive resource for potential clients",
-  "imgUrl": "/static/deaScreen.png",
-  "projectUrl": "https://dataanalyticempire.netlify.app/",
-  "size": "phone"
-},
+    "title": "Brielle Trade",
+    "description": "This a web-based trading platform that provides you with a comprehensive range of features to invest, track and grow your profits. With this platform, you can refer others to join and earn bonuses, invest your funds and monitor your portfolio performance. You can also enjoy the flexibility of making withdrawals and topping up your investment balance, putting you in charge of your finances. This trading platform boasts an intuitive interface and reliable performance, ensuring a seamless trading experience for you.",
+    "imgUrl": "/static/brielle-trade-sm.jpg",
+    "imgUrlSm": "/static/brielle-trade-sm.jpg",
+    "projectUrl": "https://brielle-trade.netlify.app",
+    "size": "phone"
+  },
   {
   "title": "Music Manager",
   "description": "The project involved building a music manager platform that allowed users to create playlists, add songs, and delete songs or playlists from their accounts. While users could not edit other users' playlists, they were able to view them. The platform was designed to be user-friendly and intuitive, making it easy for users to manage their music and discover new songs.",
-  "imgUrl": "/static/music-manager-lp.png",
-  "imgUrlSm": "/static/music-manager-sm.png",
+  "imgUrl": "/static/music-manager-lp.jpg",
+  "imgUrlSm": "/static/music-manager-sm.jpg",
   "projectUrl": "https://music-manager-3a2e6.web.app/",
   "size": "laptop"
 }
-,{
-  "title": "Brielle Trade",
-  "description": "This a web-based trading platform that provides you with a comprehensive range of features to invest, track and grow your profits. With this platform, you can refer others to join and earn bonuses, invest your funds and monitor your portfolio performance. You can also enjoy the flexibility of making withdrawals and topping up your investment balance, putting you in charge of your finances. This trading platform boasts an intuitive interface and reliable performance, ensuring a seamless trading experience for you.",
-  "imgUrl": "/static/brielle-trade-sm.png",
-  "imgUrlSm": "/static/brielle-trade-sm.png",
-  "projectUrl": "https://brielle-trade.netlify.app",
+,
+  {
+  "title": "DEA",
+  "description": "A user-friendly website for a data analytics company that showcases their services and makes it easy for potential clients to get in touch. The website includes an overview of the company's services, detailed information on each service, an About Us page, and a Contact Us page. It was designed as a comprehensive resource for potential clients",
+  "imgUrl": "/static/deaScreen.jpg",
+  "projectUrl": "https://dataanalyticempire.netlify.app/",
   "size": "phone"
 }
- 
+
 ]

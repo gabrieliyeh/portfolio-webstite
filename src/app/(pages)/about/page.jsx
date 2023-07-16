@@ -1,8 +1,8 @@
 "use client";
 import "./about.css";
 import useScrollPosition from "../../hooks/useScrollPosition";
-import Footer from "../../components/footer/Footer";
-import Navbar from "../../components/navbar/Navbar";
+import {Footer} from "../../components";
+
 import { useEffect, useRef, useState } from "react";
 const AboutPage = () => {
   const nameRef = useRef()
@@ -33,7 +33,6 @@ const AboutPage = () => {
   const scrollPosition = typeof window !== "undefined" && useScrollPosition();
   return (
     <section className="about-page">
-      <Navbar />
       <div className={`container  ${scrollPosition > 0 ? "margin-top" : ""}`}>
         <div className="name-wrapper">
           <h1 ref={nameRef} className="about-text">Iyeh Onyewuchi Gabriel</h1>
@@ -90,7 +89,7 @@ const AboutPage = () => {
             </p>
           </div>
 
-          <div className="right">
+          <article className="right">
             <p>
               Welcome to my corner of the internet! I am a frontend developer
               based in Lagos, Nigeria, and a creative problem solver who is
@@ -113,7 +112,7 @@ const AboutPage = () => {
             <p>
             I'm excited to connect with others who share my passion for technology. I'm available for full-time roles and freelance projects worldwide. Let's collaborate and create something amazing together! ❤️
             </p>
-          </div>
+          </article>
         </div>
       </div>
       <Footer />

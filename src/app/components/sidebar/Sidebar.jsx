@@ -10,17 +10,17 @@ const Sidebar = ({showSidebar, handleToggle}) => {
     <aside onClick={handleToggle} className={`${showSidebar && 'showSidebar'} backdrop`}>
       <div onClick={e=> e.stopPropagation()} className='sidebar'>
         <ul>
-          <li className="">
+          <li onClick={handleToggle} className="">
             <Link className={`${pathname === '/' ? 'nav-active': ''} home-link `} href='/'>
               Home
             </Link>
           </li>
-          <li className="">
+          <li onClick={handleToggle} className="">
             <Link className={`${pathname === '/about' ? 'nav-active': ''} about-link`}  href='/about'>
               About
             </Link>
           </li>
-          <li className="">
+          <li onClick={handleToggle} className="">
             <Link className={`${pathname === '/projects' ? 'nav-active': ''} projects-link`} href='/projects'>
               Project
             </Link>

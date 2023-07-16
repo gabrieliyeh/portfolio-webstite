@@ -25,6 +25,7 @@
   will-change: transform;
 }
 
+
 .salute-img-container {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -32,7 +33,15 @@
   will-change: transform;
   position: relative;
   top: 20px;
+  width: 100%;
 }
+
+.salute-img-container img{
+  object-fit: cover;
+  height: 100%;
+}
+
+
 
 .salute-text {
   color: #878787;

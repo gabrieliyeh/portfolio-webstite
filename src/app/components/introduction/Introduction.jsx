@@ -2,7 +2,7 @@
 import { forwardRef } from "react";
 import "./introduction.css";
 import useScrollPosition from "../../hooks/useScrollPosition";
-import Navbar from "../navbar/Navbar";
+import saluteImage from '../../../../public/static/person.png'
 
 const Introduction = forwardRef(({}, ref) => {
   const scrollPosition = useScrollPosition();
@@ -10,17 +10,16 @@ const Introduction = forwardRef(({}, ref) => {
   return (
     <section className="intro">
       <div className={`salute  `}>
-        <Navbar />
         <div className={`container  ${scrollPosition > 0 ? "margin-top" : ""}`}>
           <div ref={ref.ref1} className="salute-text-container">
             <h1 className="salute-text">Hi</h1>
           </div>
           <div ref={ref.ref2} className="salute-img-container">
             <img
-              src="/static/person.png"
-              alt="person-holding a book"
+              src={saluteImage.src}
+              alt="a person-holding a book"
               className="salute-img"
-            />
+            />  
           </div>
         </div>
       </div>

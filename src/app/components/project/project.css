@@ -7,7 +7,7 @@
           align-items: center;
   gap: 80px;
   min-height: 100vh; 
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .projects .phone {
   -webkit-box-flex: 1;
@@ -17,6 +17,11 @@
   height: 600px;
   position: relative;
 
+}
+
+.projects .phone .phoneWrapper img{
+  width: 300px;
+  height: 600px;
 }
 .projects .project:last-child{
   margin-bottom: 10vh;
@@ -44,6 +49,12 @@
           flex: 1;
   position: relative;
 }
+
+.projects .laptop .laptopWrapper img{
+  width: 600px;
+  height: 379px;
+}
+
 .projects .laptop .laptop-screen::-webkit-scrollbar {
   display: none;
 }
@@ -86,6 +97,7 @@
   border-radius: 28px;
   overflow: auto;
 }
+
 .projects .phone-sm .phone-screen::-webkit-scrollbar {
   display: none;
 }
@@ -125,21 +137,10 @@
 
   .projects .laptop{
     display: none;
-    /* width: 90vw !important;
-    height: 50%;
-    object-fit: scale-down; */
-  }
-  .projects .laptop .laptop-screen{
-    /* width: 85% !important; */
-  }
-
-  .projects .phone-sm{
-    display: block;
-    /* display: none; */
-  }
-
-  .projects .project-title{
-    /* transform: none !important; */
   }
  
+  .projects .phone-sm{
+    display: block;
+  }
+
 }
