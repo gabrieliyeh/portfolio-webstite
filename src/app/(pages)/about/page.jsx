@@ -96,7 +96,7 @@ const AboutPage = () => {
               passionate about leveraging technology to improve people's lives.
             </p>
             <p>
-              I've been a part of this industry for over three years, and within
+              I've been a part of this industry for over five years, and within
               those years, I've honed my analytic and collaboration skills,
               which makes working with a team easier. I've had the opportunity
               to work on a variety of projects, from small landing pages to

@@ -12,7 +12,6 @@ const Footer = () => {
           </a>
             <a className='linkedIn-link' href="https://www.linkedin.com/in/gabriel-iyeh/" target='_blank' rel='noopener' >LN</a>
             <a className='github-link' href="https://github.com/gabrieliyeh" target='_blank' rel='noopener' >GH</a>   
-            <a className='twitter-link' href="https://twitter.com/I_Gabriel0x" target='_blank' rel='noopener' >TW</a>
           </div>
       </div>   
     </footer>
