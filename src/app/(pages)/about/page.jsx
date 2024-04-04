@@ -36,7 +36,7 @@ const AboutPage = () => {
       <div className={`container  ${scrollPosition > 0 ? "margin-top" : ""}`}>
         <div className="name-wrapper">
           <h1 ref={nameRef} className="about-text">Iyeh Onyewuchi Gabriel</h1>
-          <a className="download-link" target="_blank" download rel="noopener noreferrer" href="iyehgabrielCV.pdf">
+          <a className="download-link" target="_blank" download rel="noopener noreferrer" href="GABRIEL-IYEH-CV.pdf">
             <span>Download</span>
             <span>Resume</span>
           </a>
